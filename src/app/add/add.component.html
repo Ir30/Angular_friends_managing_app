@@ -1,35 +1,36 @@
 <app-nav></app-nav>
 <div class="container">
     <div class="row">
-        <div class="div col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
             <div class="row">
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
 
                 <div style="border-radius:15px ;" class="div col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 mt-5 p-5 mb-5  bg-light">
                     <h1 class="text-secondary m-3">Add Friend</h1>
                     <hr class="m-3">
 
-                    <form >
+                    
                         <div class="form-group mt-5 m-3">
                           <label for="exampleInputEmail1">Name</label>
-                          <input name="name" [ngModel]="name" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                          <input name="name" [(ngModel)]="name" type="text" class="form-control" >
                         </div>
                         <div class="form-group  m-3">
                             <label for="exampleInputEmail1">Friend Name</label>
-                            <input name="friendName" [ngModel]="friendName" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                            <input name="friendName" [(ngModel)]="friendName" type="text" class="form-control" >
                         </div>
                         <div class="form-group m-3">
                           <label for="exampleInputPassword1">Description Of friend</label>
-                          <textarea name="DescribeYourFriend" [ngModel]="DescribeYourFriend" id="" cols="30" rows="4" class="form-control"></textarea>
+                          <textarea name="DescribeYourFriend" [(ngModel)]="DescribeYourFriend" id="" cols="30" rows="4" class="form-control"></textarea>
                         </div>
                         <div class="form-group  m-3">
                             <label for="exampleInputEmail1">Nick Name</label>
-                            <input name="friendNickName" [ngModel]="friendNickName" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                            <input name="friendNickName" [(ngModel)]="friendNickName" type="text" class="form-control" >
                         </div>
                         
-                        <button type="submit" class="btn btn-primary m-3">Submit</button>
-                      </form>
+                        <button (click)="readValues()" class="btn btn-primary m-3">Submit</button>
+                      
                       <br>
-                    
+                      </div>
                 </div>
 
 
