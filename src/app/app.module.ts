@@ -7,6 +7,7 @@ import { AddComponent } from './add/add.component';
 import { RouterModule, Routes } from '@angular/router';
 import { ViewComponent } from './view/view.component';
 import { NavComponent } from './nav/nav.component';
+import { SerchComponent } from './serch/serch.component';
 
 const myRoute:Routes=[
   {
@@ -16,6 +17,10 @@ const myRoute:Routes=[
   {
     path:"view",
     component:ViewComponent
+  },
+  {
+    path:"serch",
+    component:SerchComponent
   }
 ]
 
@@ -24,7 +29,8 @@ const myRoute:Routes=[
     AppComponent,
     AddComponent,
     ViewComponent,
-    NavComponent
+    NavComponent,
+    SerchComponent
   ],
   imports: [
     BrowserModule,
