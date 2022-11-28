@@ -1,0 +1,39 @@
+
+<div class="container">
+    <div class="row">
+        <div class="div col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="row ">
+
+                <div style="border-radius:15px ;" class="div col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 mt-5 p-5 mb-5  bg-light">
+                    <h1 class="text-secondary m-3 ">View Friends</h1>
+                    <hr class="m-3">
+                    
+                    
+                      <table class="table table-striped">
+                        <thead>
+                          <tr>
+                            <th scope="col">Nmae</th>
+                            <th scope="col">Friend name</th>
+                            <th scope="col">Nick Nmae</th>
+                            <th scope="col">Description</th>
+                            
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr *ngFor="let i of data">
+                            <td>{{i.name}}</td>
+                            <td>{{i.friendName}}</td>
+                            <td>{{i.friendNickName}}</td>
+                            <td>{{i.DescribeYourFriend}}</td>
+
+                          </tr>
+                          
+                        </tbody>
+                      </table>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
