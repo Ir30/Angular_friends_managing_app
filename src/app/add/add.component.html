@@ -11,22 +11,22 @@
                     <form >
                         <div class="form-group mt-5 m-3">
                           <label for="exampleInputEmail1">Name</label>
-                          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                          <input name="name" [(ngModel)]="name" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
                         </div>
                         <div class="form-group  m-3">
-                            <label for="exampleInputEmail1">Nick Name</label>
-                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                            <label for="exampleInputEmail1">Friend Name</label>
+                            <input name="friendName" [(ngModel)]="friendName" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
                         </div>
                         <div class="form-group m-3">
                           <label for="exampleInputPassword1">Description Of friend</label>
-                          <textarea name="" id="" cols="30" rows="4" class="form-control"></textarea>
+                          <textarea name="DescribeYourFriend" [(ngModel)]="DescribeYourFriend" id="" cols="30" rows="4" class="form-control"></textarea>
                         </div>
                         <div class="form-group  m-3">
                             <label for="exampleInputEmail1">Nick Name</label>
-                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                            <input name="friendNickName" [(ngModel)]="friendNickName" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
                         </div>
                         
-                        <button type="submit" class="btn btn-primary m-3">Submit</button>
+                        <button (click)="readValues()" type="submit" class="btn btn-primary m-3">Submit</button>
                       </form>
                       <br>
                     
